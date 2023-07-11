@@ -12,15 +12,15 @@
       <h2 class="text-info pl-3">Zombie Type</h2>
       <hr />
     </div>
-
+  </div>
     <div class="row">
       <div class="col-8">
         <div class="form-group row">
           <div class="col-2">
-            <label asp-for="TypeName">Type Name</label>
+            <label asp-for="TypeName" class="form-label">Type Name</label>
           </div>
           <div class="col-8">
-           TYPENAME
+              <input type="text" class="form-control" value="TypeName" placeholder="TYPENAME"/>
           </div>
         </div>
 
@@ -30,7 +30,7 @@
               <input type="submit" class="btn btn-info w-100" value="Create" asp-for="Id"/>
             </div>
             <div class="col">
-              <a class="btn btn-success w-100">Back to list</a>
+              <a class="btn btn-success w-100" href="/ZombieType/Index">Back to list</a>
             </div>
           </div>
         </div>
