@@ -16,9 +16,14 @@ namespace ZombieParty.Controllers
             return View();
         }
 
-        public IActionResult Create()
+        public IActionResult Create(Models.ZombieType zombieType)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                //Ajouter à la BD
+            }
+
+            return this.View(zombieType);
         }
     }
 }
